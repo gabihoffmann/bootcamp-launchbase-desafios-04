@@ -49,20 +49,36 @@
 
 Nesse módulo o desafio é criar um site de aulas particulares. Aplicando em pequenas doses, os conhecimentos aprendidos.
 
-- [Estrutura base]()
+- [Estrutura base](#)
   - [x] init project
   - [x] servidor
   - [x] view engine
   - [x] arquivos estáticos
-- [Header]()
-
+- [Header](#)
   - [x] header com dois links: Teachers e Students
     - [x] aplicar um background
     - [x] utilizar a fonte Roboto
     - [x] utilizar conceito de `box-sizing` e o seletor `+`
     - [x] utilizar o `after` e o `transition` para aplicar um efeito visual nos links
+- [Card do Professor](#)
 
-- [Card do Professor]()
+  - [x] lib browser-sync
+  - [x] lib npm-run-all
+  - [] card teacher
+    -[] utilize o keyframes e o animation para fazer uma animação do card
+    - [] utilize o box-shadow para aplicar uma sombra no card
+    - [] duas seções: imagem e detalhes
+      - [] imagem deve ocupar 40% do card e os detalhes 60%
+    - [] imagem randômica de uma coleção de professores (utilize a api do unsplash);
+    - [] utilize o seletor `first-child` e `border-top` para estilizar as divisórias entre os items
+    - [] utilize o seletor `nth-child()` para estilizar o label (ex.: Desde) e valor (ex.: 02/02/2020) do item
+      - [] Nome completo
+      - [] Idade
+      - [] Grau de escolaridade (ex.: Doutorado)
+      - [] Tipo de aula (presencial ou à distância)
+      - [] Acompanhamento (ex.: Matemática e Física)
+      - [] Desde (data de cadastro na plataforma)
+
 - [Formulário e Rota de cadastro do Professor]()
 - [Apresentação, edição e formatação dos dados de um professor]()
 - [HTTP: PUT e DELETE]()
