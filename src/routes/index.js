@@ -10,7 +10,7 @@ routes.get("/students", (req, res) => {
 });
 
 routes.get("/teachers", (req, res) => {
-  res.render("teachers");
+  res.render("teachers/index");
 });
 
 module.exports = routes;
