@@ -13,4 +13,12 @@ routes.get("/teachers", (req, res) => {
   res.render("teachers/index");
 });
 
+routes.get("/teachers/create", (req, res) => {
+  res.render("teachers/create");
+});
+
+routes.post("/teachers", (req, res) => {
+  res.send("recebido");
+});
+
 module.exports = routes;
