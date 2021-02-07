@@ -64,20 +64,20 @@ Nesse módulo o desafio é criar um site de aulas particulares. Aplicando em peq
 
   - [x] lib browser-sync
   - [x] lib npm-run-all
-  - [] card teacher
-    - [] descrição
+  - [x] card teacher
+    - [x] descrição
       - [x] duas seções: imagem e detalhes
       - [x] imagem randômica de uma coleção de professores (utilize a api do unsplash);
-        - [] Nome completo
-        - [] Idade
-        - [] Grau de escolaridade (ex.: Doutorado)
-        - [] Tipo de aula (presencial ou à distância)
-        - [] Acompanhamento (ex.: Matemática e Física)
-        - [] Desde (data de cadastro na plataforma)
-    - [] estilização
+        - [x] Nome completo
+        - [x] Idade
+        - [x] Grau de escolaridade (ex.: Doutorado)
+        - [x] Tipo de aula (presencial ou à distância)
+        - [x] Acompanhamento (ex.: Matemática e Física)
+        - [x] Desde (data de cadastro na plataforma)
+    - [x] estilização
       - [x] imagem deve ocupar 40% do card e os detalhes 60%
-      - [] utilize o seletor `first-child` e `border-top` para estilizar as divisórias entre os items
-      - [] utilize o seletor `nth-child()` para estilizar o label (ex.: Desde) e valor (ex.: 02/02/2020) do item
+      - [x] utilize o seletor `first-child` e `border-top` para estilizar as divisórias entre os items
+      - [x] utilize o seletor `nth-child()` para estilizar o label (ex.: Desde) e valor (ex.: 02/02/2020) do item
       - [x] utilize o keyframes e o animation para fazer uma animação do card
       - [x] utilize o box-shadow para aplicar uma sombra no card
 
