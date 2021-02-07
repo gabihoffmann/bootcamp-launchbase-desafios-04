@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
 
 :root {
-  --primary: #1e1e2c;
-  --second: #2d2d44;
-  --effect: #33e1ed;
   --white: #fff;
+  --blue-light: #cddeee;
+  --blue-gray: #6699cc;
+  --blue-dark: #1e1e2c;
 }
 * {
   margin: 0;
@@ -22,7 +22,7 @@ html {
 html,
 body {
   height: 100vh;
-  background: var(--white);
+  background: var(--blue-light);
   color: var(--primary);
   font-family: "Roboto", sans-serif;
 }
@@ -32,7 +32,7 @@ body {
 }
 
 header {
-  background: #33e1ed;
+  background: var(--blue-dark);
   width: 100%;
   padding: 4rem;
   text-align: center;
@@ -71,3 +71,47 @@ header {
   width: 100%;
   transition: width 200ms ease-in-out;
 }
+
+/* === CARD === */
+.card {
+  width: 80vw;
+  max-width: 100rem;
+  margin: 5rem auto;
+  min-height: 40rem;
+  background: var(--white);
+
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+
+  box-shadow: 4px 8px 10px var(--blue-dark);
+
+  animation: getIn 500ms ease-in-out;
+}
+
+@keyframes getIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.card section {
+  /* border: 1px solid blue; */
+}
+
+/* === FORM === */
+/*
+input {
+  width: 100%;
+  outline: none;
+}
+
+input[type="radio"] {
+  width: initial;
+  margin-right: 0.4rem;
+}
+*/
