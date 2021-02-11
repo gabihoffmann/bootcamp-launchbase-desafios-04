@@ -61,7 +61,6 @@ Nesse módulo o desafio é criar um site de aulas particulares. Aplicando em peq
     - [x] utilizar conceito de `box-sizing` e o seletor `+`
     - [x] utilizar o `after` e o `transition` para aplicar um efeito visual nos links
 - [Card do Professor](#)
-
   - [x] lib browser-sync
   - [x] lib npm-run-all
   - [x] card teacher
@@ -80,8 +79,20 @@ Nesse módulo o desafio é criar um site de aulas particulares. Aplicando em peq
       - [x] utilize o seletor `nth-child()` para estilizar o label (ex.: Desde) e valor (ex.: 02/02/2020) do item
       - [x] utilize o keyframes e o animation para fazer uma animação do card
       - [x] utilize o box-shadow para aplicar uma sombra no card
-
-- [Formulário e Rota de cadastro do Professor]()
+- [Formulário e Rota de cadastro do Professor](#)
+  - [] criar formulário de cadastro de professor
+    - [] avatar url: campo do tipo `url` para cadastrar o caminho da imagem do professor;
+    - [] nome completo: campo do tipo `text`;
+    - [] data de nascimento: campo do tipo `date`;
+    - [] grau de escolaridade: campo do tipo `select` ([documentação do select](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/select)) que deve conter as opções **Ensino Médio Completo, Ensino Superior Completo, Mestrado e Doutorado**;
+    - [] tipo de aula: campo do tipo `radio` que deve conter as opções **Presencial e À distância**;
+    - [] área de atuação: campo do tipo `text` que deve conter as informações das matérias que o professor pode lecionar.
+  - [] rota tipo `post` para validar e salvar os dados
+    - [] crie um arquivo `teachers.js`
+    - [] validação dos campos utilizando `keys` e o constructor `Object`
+    - [] utilizar o método `writeFile` da lib `fs` para gerar um arquivo json
+    - [] armazenar em um array todos os professores cadastrados
+    - [] após validação e salvamento, redirecionar para a página de listagem de professores.
 - [Apresentação, edição e formatação dos dados de um professor]()
 - [HTTP: PUT e DELETE]()
 - [Listagem de professores]()
