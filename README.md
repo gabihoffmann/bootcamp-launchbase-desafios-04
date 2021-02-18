@@ -42,7 +42,7 @@
 
 1. Faça um clone desse repositório;
 2. Entre na pasta `cd bootcamp-launchbase-desafios-04`;
-3. Rode `yarn` para instalar as dependências;
+3. Rode `yarn install` para instalar as dependências;
 4. Rode `yarn dev` para iniciar o servidor.
 
 ## :rocket: Desafios
@@ -80,20 +80,36 @@ Nesse módulo o desafio é criar um site de aulas particulares. Aplicando em peq
       - [x] utilize o keyframes e o animation para fazer uma animação do card
       - [x] utilize o box-shadow para aplicar uma sombra no card
 - [Formulário e Rota de cadastro do Professor](#)
-  - [] criar formulário de cadastro de professor
-    - [] avatar url: campo do tipo `url` para cadastrar o caminho da imagem do professor;
-    - [] nome completo: campo do tipo `text`;
-    - [] data de nascimento: campo do tipo `date`;
-    - [] grau de escolaridade: campo do tipo `select` ([documentação do select](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/select)) que deve conter as opções **Ensino Médio Completo, Ensino Superior Completo, Mestrado e Doutorado**;
-    - [] tipo de aula: campo do tipo `radio` que deve conter as opções **Presencial e À distância**;
-    - [] área de atuação: campo do tipo `text` que deve conter as informações das matérias que o professor pode lecionar.
-  - [] rota tipo `post` para validar e salvar os dados
-    - [] crie um arquivo `teachers.js`
-    - [] validação dos campos utilizando `keys` e o constructor `Object`
-    - [] utilizar o método `writeFile` da lib `fs` para gerar um arquivo json
-    - [] armazenar em um array todos os professores cadastrados
-    - [] após validação e salvamento, redirecionar para a página de listagem de professores.
-- [Apresentação, edição e formatação dos dados de um professor]()
+  - [ ] criar formulário de cadastro de professor
+    - [ ] avatar url: campo do tipo `url` para cadastrar o caminho da imagem do professor;
+    - [ ] nome completo: campo do tipo `text`;
+    - [ ] data de nascimento: campo do tipo `date`;
+    - [ ] grau de escolaridade: campo do tipo `select` ([documentação do select](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/select)) que deve conter as opções **Ensino Médio Completo, Ensino Superior Completo, Mestrado e Doutorado**;
+    - [ ] tipo de aula: campo do tipo `radio` que deve conter as opções **Presencial e À distância**;
+    - [ ] área de atuação: campo do tipo `text` que deve conter as informações das matérias que o professor pode lecionar.
+  - [ ] rota tipo `post` para validar e salvar os dados
+    - [ ] crie um arquivo `teachers.js`
+    - [ ] validação dos campos utilizando `keys` e o constructor `Object`
+    - [ ] utilizar o método `writeFile` da lib `fs` para gerar um arquivo json
+    - [ ] armazenar em um array todos os professores cadastrados
+    - [ ] após validação e salvamento, redirecionar para a página de listagem de professores.
+- [Apresentação, edição e formatação dos dados de um professor](#)
+
+  - [ ] criar rota para exibir os dados do professor
+    - [ ] criar rota para lidar com a apresentação dos dados cadastrados de um professor
+    - [ ] criar um método _show_ para buscar e retornar o professor a partir do `id` fornecido pela rota
+    - [ ] criar um arquivo `utils.js` para lidar com a formatação dos seguintes dados
+      - [ ] idade: exporta uma função chamada _age_, essa função deve retornar a idade a partir do parâmetro (data de nascimento) informado;
+      - [ ] grau de escolaridade: crie uma função _graduation_, que deve retornar o grau de escolaridade formatado a partir do valor do `select` informado (ex.: Ensino Médio Completo para o valor medio do select);
+      - [ ] acompanhamento: utilize o método split da string para gerar um array com as matérias que o professor leciona;
+      - [ ] desde: utilize o constructor Intl e seus métodos para gerar uma data no formato dia/mes/ano.
+    - [ ] adicionar um botão com link para redirecionar para rota de **edição** dos dados cadastrados
+  - [ ] criar rota para editar os dados do professor
+    - [ ] criar rota para lidar com a edição dos dados cadastrados de um professor
+    - [ ] criar um método _edit_ para buscar e retornar o professor a partir do `id` fornecido pela rota
+    - [ ] utilize a mesma interface da rota de apresentação dos dados do professor (lembrando de fazer o reaproveitamento do form com um arquivo fields.njk).
+    - [ ] crie uma função chamada _date_, que deve retornar a data no formato **yyyy-mm-dd** para a correta exibição no input do tipo date no HTML (lembre de tratar os dias e meses menores que 10 utilizando o método splice da string).
+
 - [HTTP: PUT e DELETE]()
 - [Listagem de professores]()
 - [Estruturando estudantes]()
